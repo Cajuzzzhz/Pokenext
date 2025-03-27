@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import styles from "/styles/Home.module.css";
-import Card from "./components/card";
+import Card from "../components/card";
 
 export async function getStaticProps() {
-  const maxPokemons = 1000;
+  const maxPokemons = 1025;
   const api = "https://pokeapi.co/api/v2/pokemon/";
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`);
